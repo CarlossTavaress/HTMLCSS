@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        body { font-family: Arial, Helvetica, sans-serif;
+            background-color: darkblue;
+
+        }
+
+        a { 
+            color:rgb(0, 255, 72);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color:rgb(128, 122, 0);
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: rgb(218, 255, 10);
+        }
+
+        a:active{
+            color:coral
+        }
+
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color:rgb(143, 84, 8)
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.facebook.com/carlosmatheustavares">FaceBook</a></li>
+        <li><a href="https://www.youtube.com/?hl=pt&gl=BR" target="_blank">YouTube</a></li>
+        <li><a href="https://www.twitch.tv/directory/game/League%20of%20Legends" target="_blank">TwitchTV</a></li>
+    </ul>
+</body>
+</html>
