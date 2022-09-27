@@ -10,6 +10,12 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        tbody > tr:nth-child(2n) {
+
+            background-image: linear-gradient(to right, green, transparent);
+
+        }
+
         table {
             width: 400px;
             border-collapse: collapse;
@@ -28,11 +34,21 @@
         td.numero {
             text-align: right;
         }
+        caption{
+            background-color: gray;
+            text-align: center;
+            padding:10px;
+            font-size:1.5em;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>
+            População por Estados no brasil
+        </caption>
         <thead>
             <tr>
                 <th>Estado</th>
