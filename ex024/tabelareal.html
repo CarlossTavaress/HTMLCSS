@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela real</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;            
+        }
+
+        table {
+            border-collapse: collapse;
+            
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela Real com dados</h1>
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+        <thead>
+            <th>Grupos</th>
+            <th>Nomes</th>
+            <th colspan="3">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Vingadores</td>
+                <td>Rambo</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Mello</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Fragmentado</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Old-Boy a Lenda </td>
+                <td>Welcome to the Jungle</td>                
+            </tr>
+            <tr>
+                <td>Fábio Motta</td>
+                <td>Guardiões da galáxia</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</body>
+</html>
