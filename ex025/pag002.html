@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste tabela 02</title>
+    <style>
+                body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        tbody > tr:nth-child(2n) {
+
+            background-image: linear-gradient(to right, green, transparent);
+
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        
+        thead > tr > th {
+            position: sticky;
+            top:-1px;
+            background-color: darkgreen;
+
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        thead, tfoot {
+            background-color: darkgreen;
+            color:white;
+        }
+
+        td.numero {
+            text-align: right;
+        }
+        caption{
+            background-color: gray;
+            text-align: center;
+            padding:10px;
+            font-size:1.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            População por Estados no brasil
+        </caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.9283.023</td>
+                
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.873.923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16.983.811</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">11.934.123</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">9.125.092</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.9283.023</td>
+                
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.873.923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16.983.811</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">11.934.123</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero"> 9.125.092</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.9283.023</td>
+                
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.873.923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16.983.811</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">11.934.123</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">9.125.092</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total Habitantes</th>
+                <strong>
+                    <td>215.983.241</td>
+                </strong> 
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
