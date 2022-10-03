@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário na caixa</title>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        div {
+
+            height: 500px;
+            width: 500px;
+            border: 1px solid black;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro Pessoa</h1>
+    <div>
+        <form action="">
+            <p><label for="inome">Nome</label>: <input type="text" name="nome" id="inome"></p>
+            <p><label for="isobrenome">Sobrenome</label>: <input type="text" name="sobrenome" id="isobrenome"></p>
+            <p><label for="inumero">Telefone</label>: <input type="number" name="numero" id="inmuero"></p>
+            <p><label for="iemail">Email</label>: <input type="email" name="email" id="iemail"></p>
+            <p>Senha: <input type="password" name="senha" id="isenha"></p>
+        </form>
+    </div>
+</body>
+</html>
