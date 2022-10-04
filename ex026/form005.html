@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário botão rádio</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sex" id="isexm"><label for="isexm">Masculino</label>
+            <input type="radio" name="sex" id="isexf"><label for="isexf">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <label for="ifut"><input type="checkbox" name="futebol" id="ifut">Futebol</label>
+            <input type="checkbox" name="tenis" id="itenis"><label for="itenis">Tênis</label>
+            <input type="checkbox" name="volei" id="ivolei"><label for="ivolei">Vôlei</label>
+            <input type="checkbox" name="pingpong" id="ipingpong"><label for="ipingpong">Ping-Pong</label>
+            <input type="checkbox" name="natacao" id="inatacao"><label for="inatacao">Natação</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
