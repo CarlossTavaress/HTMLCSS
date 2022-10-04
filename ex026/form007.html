@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Escolha um estado</h1>
+    <form action="cadastro.php" method="get">
+
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="PA">Pará</option>
+            <option value="PR">Paraná</option>
+        </select>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="mensagem" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="profissão" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="Cont">Contador</option>
+                <option value="Dev">Desenvolvedor</option>
+                <option value="Eng">Engenheiro</option>
+                <option value="Prof">Professor</option>
+            </datalist>
+        </p>
+    </form>
+</body>
+</html>
