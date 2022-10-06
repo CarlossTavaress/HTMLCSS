@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">OPÇÃO 1</a></li>
                 <li><a href="#">OPÇÃO 2</a></li>
@@ -21,7 +23,7 @@
             </ul>
         </menu>
     </header>
-    <main>
+    <main >
         <article>
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et nemo, voluptate odit nesciunt, possimus enim id veniam quae laboriosam odio voluptatum doloremque at minima mollitia provident totam, accusamus fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro id cum laborum, in, optio cumque aliquid quae doloribus dicta doloremque totam molestias natus maxime excepturi asperiores eaque quaerat adLorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et nemo, voluptate odit nesciunt, possimus enim id veniam quae laboriosam odio voluptatum doloremque at minima mollitia provident totam, accusamus fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro id cum laborum, in, optio cumque aliquid quae doloribus dicta doloremque totam molestias natus maxime excepturi asperiores eaque quaerat ad..</p>
@@ -29,5 +31,17 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et nemo, voluptate odit nesciunt, possimus enim id veniam quae laboriosam odio voluptatum doloremque at minima mollitia provident totam, accusamus fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro id cum laborum, in, optio cumque aliquid quae doloribus dicta doloremque totam molestias natus maxime excepturi asperiores eaque quaerat ad.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et nemo, voluptate odit nesciunt, possimus enim id veniam quae laboriosam odio voluptatum doloremque at minima mollitia provident totam, accusamus fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro id cum laborum, in, optio cumque aliquid quae doloribus dicta doloremque totam molestias natus maxime excepturi asperiores eaque quaerat ad.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et nemo, voluptate odit nesciunt, possimus enim id veniam quae laboriosam odio voluptatum doloremque at minima mollitia provident totam, accusamus fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro id cum laborum, in, optio cumque aliquid quae doloribus dicta doloremque totam molestias natus maxime excepturi asperiores eaque quaerat ad.</p>
             
     </main>
+
+    <script>
+        function clickMenu(){
+
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+
+        }
+    </script>
 </body>
 </html>
